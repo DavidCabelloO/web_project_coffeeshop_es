@@ -1,0 +1,132 @@
+/*Esta propiedad de maring 0 deberia de aplicarse en todo el sitio a menos que se diga lo contrario*/
+*{
+    margin:0;
+}
+
+body {
+    font-family: "Inter", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    min-width:1100px;
+    max-width:1600px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    position:relative;
+}
+
+.logo{
+    width: 105px;
+    height: 39px;
+}
+
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-right: 26px;
+    margin-left: 30px;
+    padding-top: 0;
+    padding-right:0;
+}
+
+.nav-link{
+    text-decoration: none;
+    color:#000000;
+}
+
+.nav-links{
+    font-family:  'Inter', 'Arial', sans-serif ;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    display:flex;
+    column-gap: 20px;
+    list-style: none;
+    margin: 0 0 0 0;
+}
+
+.span-accent{ /* header-title a span-accent*/
+    font-family: 'Noto Serif', 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 72px;
+    color: #FF976B;
+
+}
+
+
+.header-title{ /*span-accent a header-title*/
+    font-family: 'Inter', "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 72px;
+    letter-spacing: -1px;
+    color: #000000;
+    max-width: 709px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 183px;
+    margin-left: 80px;
+    margin-bottom: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+
+.header-description{
+    font-family: 'Inter', "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 680px;
+    margin-left: 80px;
+    margin-top: 28px;
+    margin-bottom: 0px;
+}
+
+
+.info-text{
+    font-family: 'Inter', "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6F6F6F;
+}
+
+.header-image{
+    height: 568px;
+    width: 646px;
+    position: absolute;
+    right:5px;
+    top:124px;
+}
+
+.header{
+    min-height: 720px;
+    max-height: 800px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-info{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-end;
+
+    margin-top: auto;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+}
+
+.header-hours{
+}
