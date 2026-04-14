@@ -1,132 +1,348 @@
 /*Esta propiedad de maring 0 deberia de aplicarse en todo el sitio a menos que se diga lo contrario*/
-*{
-    margin:0;
+* {
+  margin: 0;
 }
 
 body {
-    font-family: "Inter", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    min-width:1100px;
-    max-width:1600px;
-    margin: 0 auto;
-    background-color: #FFFFFF;
-    position:relative;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  position: relative;
 }
 
-.logo{
-    width: 105px;
-    height: 39px;
+.logo {
+  width: 105px;
+  height: 39px;
 }
 
-
-.nav{
-    display:flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-right: 26px;
-    margin-left: 30px;
-    padding-top: 0;
-    padding-right:0;
+.header__image--background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -80px;
+  z-index: -1;
 }
 
-.nav-link{
-    text-decoration: none;
-    color:#000000;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-right: 26px;
+  margin-left: 30px;
+  padding-top: 0;
+  padding-right: 0;
 }
 
-.nav-links{
-    font-family:  'Inter', 'Arial', sans-serif ;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-
-    display:flex;
-    column-gap: 20px;
-    list-style: none;
-    margin: 0 0 0 0;
+.nav-link {
+  text-decoration: none;
+  color: #000000;
 }
 
-.span-accent{ /* header-title a span-accent*/
-    font-family: 'Noto Serif', 'Times New Roman', serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 58px;
-    line-height: 72px;
-    color: #FF976B;
-
+.nav-link:hover {
+  color: #ff976b;
 }
 
+.nav-links {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 
-.header-title{ /*span-accent a header-title*/
-    font-family: 'Inter', "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 58px;
-    line-height: 72px;
-    letter-spacing: -1px;
-    color: #000000;
-    max-width: 709px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 183px;
-    margin-left: 80px;
-    margin-bottom: 0px;
-    padding: 0px 0px 0px 0px;
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
+  margin: 0 0 0 0;
 }
 
-
-.header-description{
-    font-family: 'Inter', "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-    max-width: 680px;
-    margin-left: 80px;
-    margin-top: 28px;
-    margin-bottom: 0px;
+.span-accent {
+  /* header-title a span-accent*/
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 72px;
+  color: #ff976b;
 }
 
-
-.info-text{
-    font-family: 'Inter', "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #6F6F6F;
+.header-title {
+  /*span-accent a header-title*/
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  color: #000000;
+  max-width: 709px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 183px;
+  margin-left: 80px;
+  margin-bottom: 0px;
+  padding: 0px 0px 0px 0px;
 }
 
-.header-image{
-    height: 568px;
-    width: 646px;
-    position: absolute;
-    right:5px;
-    top:124px;
+.header-description {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 680px;
+  margin-left: 80px;
+  margin-top: 28px;
+  margin-bottom: 0px;
 }
 
-.header{
-    min-height: 720px;
-    max-height: 800px;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+.info-text {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6f6f6f;
 }
 
-.header-info{
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: flex-end;
-
-    margin-top: auto;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: 40px;
+.header-image {
+  height: 568px;
+  width: 646px;
+  position: absolute;
+  right: 5px;
+  top: 124px;
 }
 
-.header-hours{
+.header {
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  background-image: url(../images/background_header.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-top: auto;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 40px;
+}
+
+.header-hours {
+  display: block;
+}
+
+.form__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.content {
+  background-color: #ffd6c5;
+  background-image: url(../images/background_reservation.svg);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.form_title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+
+  text-align: center;
+  padding-top: 100px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  /*
+  margin-bottom: 120px;
+  */
+  max-width: 385px;
+}
+
+.form__label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+
+  margin-bottom: 8px;
+}
+
+.form__input {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  max-height: 60px;
+
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 32px;
+}
+
+.form__button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  min-height: 60px;
+
+  border-radius: 4px;
+  margin-bottom: 32px;
+
+  background-color: #e96e3a;
+}
+
+.form__button--label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+  margin-bottom: 120px;
+}
+
+.form__button:hover:enabled {
+  background-color: #e96e3a;
+  opacity: 0.7;
+}
+
+.form__checkbox--input {
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+.form__label--margin0 {
+  margin-bottom: 0px;
+}
+
+.footer {
+  background-color: #d35722;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: -1;
+
+  padding-top: 60px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.footer__circle {
+  position: absolute;
+  background-color: #e96e3a;
+  z-index: -1;
+  width: 340px;
+  height: 340px;
+  left: -84px;
+  top: -152px;
+  border-radius: 340px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 100px;
+  margin-left: 0px;
+}
+
+.footer__logo {
+  width: 105px;
+  height: 39px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.footer__redes {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.footer__redes--título {
+  font-family: “Inter”;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.footer__redes--links {
+  font-family: “Inter”;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__redes--links:hover {
+  color: #ffd6c5;
+}
+
+.footer__redes--list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  column-gap: 10px;
+}
+
+.footer__redes--icon {
+  width: 16px;
+  height: 16px;
+}
+
+.bmargin-16px {
+  margin-bottom: 16px;
+}
+
+.footer__copyright {
+  font-family: “Inter”;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  padding-bottom: 60px;
 }

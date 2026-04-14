@@ -7,8 +7,8 @@
     <title>Triple Espresso</title>
 
     <link rel="Stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="icon" type="image" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="icon" type="image" href="./favicon.ico" />
 
     <!--conexiones de google fonts-->
     <!--Inter y Noto Serif-->
@@ -59,7 +59,84 @@
 
     <main class="content">
       <section class="reservation" id="reservation"></section>
+
+      <h2 class="form_title">Reservar una mesa</h2>
+      <form class="form">
+        <label for="username" class="form__label">Nombre *</label>
+        <input
+          type="text"
+          placeholder="Nombre"
+          id="username"
+          class="form__input"
+          required
+        />
+        <label for="comensales" class="form__label"
+          >Numero de comensales *</label
+        >
+        <input
+          type="number"
+          placeholder="1-8"
+          id="comensales"
+          class="form__input"
+          required
+        />
+        <label for="fecha_reservación" class="form__label"
+          >Fecha y hora *</label
+        >
+        <input
+          type="datetime-local"
+          id="fecha_reservación"
+          class="form__input"
+          required
+        />
+        <label for="email" class="form__label">Tu correo electrónico</label>
+        <input
+          type="email"
+          placeholder="email@email.com"
+          id="email"
+          class="form__input"
+          required
+        />
+        <button type="submit" class="form__button">Reservar una mesa</button>
+        <div class="form__button--label">
+          <input type="checkbox" class="form__checkbox--input" required />
+          <label class="form__label form__label--margin0"
+            >Acepto los términos de uso</label
+          >
+        </div>
+      </form>
     </main>
-    <footer class="footer" id="footer"></footer>
+    <footer class="footer" id="footer">
+      <div class="footer__circle"></div>
+      <div class="footer__content">
+        <img
+          src="./images/logo_coffeeshop_light.svg"
+          alt="logo del sition"
+          class="footer__logo"
+        />
+        <nav class="footer__redes">
+          <p class="footer__redes--título">Redes sociales</p>
+          <ul>
+            <li class="footer__redes--list bmargin-16px">
+              <img
+                src="./images/facebook_white.svg"
+                alt="logo facebook"
+                class="footer__redes--icon"
+              />
+              <a href="#footer" class="footer__redes--links">Facebook</a>
+            </li>
+            <li class="footer__redes--list">
+              <img
+                src="./images/instagram_white.svg"
+                alt="logo instagram"
+                class="footer__redes--icon"
+              />
+              <a href="#footer" class="footer__redes--links">Instagram</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer__copyright">© 2026 David Cabello</p>
+    </footer>
   </body>
 </html>
